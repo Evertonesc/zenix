@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Agents / skills
+.agents/
+
+# Project docs (not source code)
+AGENTS.md
+zenix_project_scope.md
