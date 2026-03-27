@@ -1,7 +1,0 @@
-﻿services:
-  zenix:
-    image: zenix
-    build:
-      context: .
-      dockerfile: Zenix/Dockerfile
-
