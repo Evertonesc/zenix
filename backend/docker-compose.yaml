@@ -1,0 +1,7 @@
+﻿services:
+  zenix.api:
+    image: zenix.api
+    build:
+      context: .
+      dockerfile: src/Zenix.Api/Dockerfile
+
