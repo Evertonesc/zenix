@@ -9,6 +9,7 @@ Thumbs.db
 
 # Agents / skills
 .agents/
+GEMINI.md
 
 # Project docs (not source code)
 AGENTS.md
