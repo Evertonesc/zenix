@@ -5,12 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Features\Patients\Domain.fs" />
     <Compile Include="Program.fs" />
-    <Folder Include="Features\Patients\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Giraffe" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Properties\launchSettings.json" />
   </ItemGroup>
 
 </Project>
