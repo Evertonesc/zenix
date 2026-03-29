@@ -1,6 +1,6 @@
 <Solution>
   <Folder Name="/src/">
     <File Path="src\Dockerfile" />
-    <Project Path="src/Zenix.Api/Zenix.Api.fsproj" />
+    <Project Path="src/Zenix/Zenix.fsproj" />
   </Folder>
 </Solution>

@@ -2,14 +2,14 @@
 
 WORKDIR /src
 
-COPY ["src/Zenix.Api/Zenix.Api.fsproj", "Zenix.Api/"]
-RUN dotnet restore "Zenix.Api/Zenix.Api.fsproj"
+COPY ["src/Zenix/Zenix.fsproj", "Zenix/"]
+RUN dotnet restore "Zenix/Zenix.fsproj"
 
-COPY src/Zenix.Api/ Zenix.Api/
-WORKDIR "/src/Zenix.Api"
-RUN dotnet build "Zenix.Api.fsproj" -c Release -o /app/build
+COPY src/Zenix/ Zenix/
+WORKDIR "/src/Zenix"
+RUN dotnet build "Zenix.fsproj" -c Release -o /app/build
 
-RUN dotnet publish "Zenix.Api.fsproj" -c Release -o /app/publish
+RUN dotnet publish "Zenix.fsproj" -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
 
@@ -19,4 +19,4 @@ COPY --from=build /app/publish .
 ENV ASPNETCORE_URLS=http://+:80
 EXPOSE 80
 
-ENTRYPOINT ["dotnet", "Zenix.Api.dll"]
+ENTRYPOINT ["dotnet", "Zenix.dll"]
