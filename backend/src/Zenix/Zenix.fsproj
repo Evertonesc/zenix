@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Compile Include="Program.fs" />
+    <Folder Include="Features\Patients\" />
   </ItemGroup>
 
   <ItemGroup>
